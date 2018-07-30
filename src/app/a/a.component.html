@@ -1,0 +1,79 @@
+<p>
+.
+</p>
+
+
+
+
+
+<br><br>
+Enter Temp. in F<input type="number" [(ngModel)]="fer"> 
+<button class="uk-button uk-button-danger" (click)=FtoC()>Temp in Cel={{ ab  }}</button>
+<h3 hidden>sum={{ ab | number:'2.1-3' }}</h3>
+<!-- <h4>array length= {{ abc.length }}</h4> -->
+<!-- <h4>array 1st ele = {{ abc[0].a }}</h4>
+<div  *ngFor="let a of abc">
+   {{ a.a }}
+</div> -->
+
+
+<!-- <div style="width: 40%;">
+    <canvas
+        baseChart
+        [chartType]="'pie'"
+        [datasets]="chartData"
+        [labels]="chartLabels"
+        [options]="chartOptions"
+        [legend]="true"
+        (chartClick)="onChartClick($event)">
+    </canvas>
+  </div> -->
+  <!-- <hr>
+<h3>Chart::</h3>
+    <div style="width: 40%;">
+        <canvas
+            baseChart
+            [chartType]="'bar'"
+            [datasets]="chartData"
+            [labels]="chartLabels"
+            [options]="chartOptions"
+            [legend]="true"
+            (chartClick)="onChartClick($event)">
+        </canvas>
+      </div><br><hr> -->
+
+ <hr>
+
+
+<input type="text" [(ngModel)]="city"  placeholder="Enter City name ..."><br>
+<input type="text" [(ngModel)]="state"  placeholder="Enter State..."><br>
+<button class="uk-button uk-button-danger" (click)="weather()">Submit</button><br><br>
+
+
+<div class="uk-card uk-card-primary uk-card-body uk-width-1-2@m">
+    <h3 class="uk-card-title">Weather Info</h3>
+    <h1 class="uk-label">sunrise </h1> {{ data1.query.results.channel.astronomy.sunrise }}<br>
+<h1 class="uk-label uk-label-success">sunset </h1> {{ data1.query.results.channel.astronomy.sunset}}<br>
+<h1 class="uk-label uk-label-success">Temp in F </h1> {{ data1.query.results.channel.item.condition.temp}}<br>
+<span class="uk-label uk-label-success">Environmental condition </span> {{ data1.query.results.channel.item.condition.text}}
+</div>
+<br>
+
+
+     <!-- This is a button toggling the modal -->
+     <button class="uk-button uk-button-default uk-margin-small-right" type="button"
+     uk-toggle="target: #modal-example">🙂</button>
+    
+    
+    
+    <!-- This is the modal -->
+    <div id="modal-example" uk-modal>
+        <div class="uk-modal-dialog uk-modal-body">
+            <h2 class="uk-modal-title">weather & Movie Details</h2>
+            <h2>©2018 | 6597 </h2>
+            <p class="uk-text-right">
+                <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
+            </p>
+        </div>
+    </div>
+

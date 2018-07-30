@@ -1,0 +1,31 @@
+<h1>
+  Movie works...!
+</h1>
+<input type="text" required [(ngModel)]="movie" class="form-control" placeholder="Enter Movie name ...">
+<button class="uk-button uk-button-danger" (click)="movieService()" >Search</button>
+<br><br>
+
+<!-- <h1>{{ data1.Title }}</h1>
+<h1>{{ data1.Genre }}</h1>
+<h1>{{ data1.Actors }}</h1>
+<h1>{{ data1.imdbRating }}</h1> -->
+
+
+
+
+
+
+  <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+    <div class="uk-card-media-left uk-cover-container">
+        <img src="{{ data1.Poster }}" alt="" uk-cover>
+        <canvas width="200" height="800"></canvas>
+    </div>
+    <div>
+        <div class="uk-card-body">
+          <h1 class="uk-card-title">Movie: {{ data1.Title }}</h1>
+          <h3>Genre: {{ data1.Genre }}</h3>
+          <h3>Cast :{{ data1.Actors }}</h3>
+          <h3>IMDB Rating :{{ data1.imdbRating }}</h3>
+        </div>
+    </div>
+</div>
